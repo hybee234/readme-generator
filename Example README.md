@@ -5,10 +5,14 @@
 
 ## Description
 
-This webpage is a Weather Dashboard allowing the user to search for a city across the globe to view:
+Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-1. Current weather, and
-2. A 5-day weather forecast 
+- What was your motivation?
+- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+- What problem does it solve?
+- What did you learn?
+
+What is the application and what does it do?
 
 The Weather dashboard has some other notable features
 * Storage storage of search history to allow for quick searches
@@ -19,11 +23,15 @@ This webpage was developed without a boiler plate
 
 ## Table of contents
 
-# <a href="#installation">Installation</a>
+- <a href="#installation">Installation</a>
 
+- <a href="#usage">Usage</a>
 
-
-
+- [Credits](#credits)
+- [License](#license)
+- [Contribution Guidelines](#contribution guidelines)
+- [Test Instructions](#test instructions)
+- [Questions](#questions)
 
 ## Installation <a name="installation"></a>
 
@@ -32,7 +40,8 @@ Cloning the repo is the only step required.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## Usage
+## Usage <a name="usage"></a>
+
 <a name="URL"></a>
 Link to deployed website is found here:
 * https://hybee234.github.io/weather-dashboard/
