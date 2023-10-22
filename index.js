@@ -1,14 +1,26 @@
+//Global Variables
+
+var githubtest = ""; 
+
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
 //fs
 //inquirer
 
+//---------------------------//
+// Constant - generateReadme //
+//---------------------------//
 
-const generateReadme = ({ title, description, location, github, linkedin }) =>
+//Only pass through values that will be used verbatim in responses to questions)
+//All other variables need to be global variables
+
+const generateReadme = ({title, description, github, linkedin }) =>
 `
-I am from ${location}.
 My GitHub username is ${github}
+
+${githubtest}
+
 LinkedIn: ${linkedin}
 
 <a name="readme-top"></a>
@@ -105,11 +117,11 @@ If you have questions, please contact me:
 - Email: test@gmail.com
 - GitHUb Username: test123
 
- 
- 
- 
+  
  
         `;
+
+      
 
 inquirer
   .prompt([
@@ -143,9 +155,38 @@ inquirer
       name: 'linkedin',
       message: 'Enter your LinkedIn URL.',
     },
+
+
+    {
+      type: 'list',
+      name: 'databasetype',
+      message: 'Choose database :',
+      choices: ['mongoDB', 'mysql [alpha]', 'firebase [alpha]', 'url [alpha]'],
+      default: 'mongoDB'
+    },
+    {
+     type: 'input',
+     name: 'url',
+     message: 'Enter the URL',
+     when: (answers) =>answers.databasetype=== 'mongoDB'
+    },
+  
+
   ])
   .then((answers) => {
-    const readmeContent = generateReadme(answers);
+    
+
+    //Assess response to github - set the value of githubtest based on whether github is blank (declare githubtest as a global variable so that it can be used in the readme template in generateReadme())
+    if (answers.github) {
+      githubtest = `My GitHub username is ${answers.github} and this was dynamically inserted`
+      console.log (githubtest)
+  } else {
+    console.log ("github is blank")
+    githubtest = `github is null/undefined ... do something to remove  this section`
+    console.log (githubtest)
+  };
+  
+  const readmeContent = generateReadme(answers);
 
 // probably need an if statement in here about the questions section - if missing then leave blank or something
 

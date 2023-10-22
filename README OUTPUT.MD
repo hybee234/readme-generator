@@ -1,17 +1,19 @@
 
-I am from undefined.
-My GitHub username is abc123
-LinkedIn: 123abc
+My GitHub username is e
+
+My GitHub username is e and this was dynamically inserted
+
+LinkedIn: f
 
 <a name="readme-top"></a>
 
-# Readme Generator 
+# a 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-The readme Generation is a NodeJS application that that user can run to create a professionally looking Readme file in markdown language. It aims to simplify the process of creating a readme file so that developers can spend more time focusing on developing and less time on documentation
+b
 
 - What was your motivation?
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
@@ -97,8 +99,6 @@ If you have questions, please contact me:
 - Email: test@gmail.com
 - GitHUb Username: test123
 
- 
- 
- 
+  
  
         
