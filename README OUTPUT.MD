@@ -1,16 +1,8 @@
-// TODO: Include packages needed for this application
-const fs = require('fs');
-const inquirer = require('inquirer');
-//fs
-//inquirer
+   <h1>Hi! My name is a</h1>
+I am from b.
 
-
-const generateReadme = ({ name, location, github, linkedin }) =>
-`   <h1>Hi! My name is ${name}</h1>
-I am from ${location}.
-
-My GitHub username is ${github}
-LinkedIn: ${linkedin}
+My GitHub username is r
+LinkedIn: f
 
 <a name="readme-top"></a>
 
@@ -110,69 +102,4 @@ If you have questions, please contact me:
  
  
  
-        `;
-
-inquirer
-  .prompt([
-    {
-      type: 'input',
-      name: 'name',
-      message: 'What is your name?',
-    },
-    {
-      type: 'input',
-      name: 'location',
-      message: 'Where are you from?',
-    },
-    {
-      type: 'input',
-      name: 'hobby',
-      message: 'What is your favorite hobby?',
-    },
-    {
-      type: 'input',
-      name: 'food',
-      message: 'What is your favorite food?',
-    },
-    {
-      type: 'input',
-      name: 'github',
-      message: 'Enter your GitHub Username',
-    },
-    {
-      type: 'input',
-      name: 'linkedin',
-      message: 'Enter your LinkedIn URL.',
-    },
-  ])
-  .then((answers) => {
-    const readmeContent = generateReadme(answers);
-
-    fs.writeFile('README OUTPUT.MD', readmeContent, (err) =>
-      err ? console.log(err) : console.log('Successfully created README OUTPUT.md')
-    );
-  });
-
-
-
-
-
-
-
-
-
-
-
-
-
-// TODO: Create an array of questions for user input
-const questions = [];
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+        
