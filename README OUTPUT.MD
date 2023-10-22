@@ -1,18 +1,17 @@
-   <h1>Hi! My name is a</h1>
-I am from b.
 
-My GitHub username is r
-LinkedIn: f
+I am from undefined.
+My GitHub username is abc123
+LinkedIn: 123abc
 
 <a name="readme-top"></a>
 
-# Example Project Readme File 
+# Readme Generator 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+The readme Generation is a NodeJS application that that user can run to create a professionally looking Readme file in markdown language. It aims to simplify the process of creating a readme file so that developers can spend more time focusing on developing and less time on documentation
 
 - What was your motivation?
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
