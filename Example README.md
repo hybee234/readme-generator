@@ -2,6 +2,7 @@
 
 # Example Project Readme File 
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
@@ -23,24 +24,22 @@ This webpage was developed without a boiler plate
 
 ## Table of contents
 
-- <a href="#installation">Installation</a>
-
-- <a href="#usage">Usage</a>
-
+- [Installation](#installation)
+- [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
-- [Contribution Guidelines](#contribution guidelines)
-- [Test Instructions](#test instructions)
+- [Contributing](#contributing)
+- [Testing](#testing)
 - [Questions](#questions)
 
-## Installation <a name="installation"></a>
+## Installation
 
 Cloning the repo is the only step required.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## Usage <a name="usage"></a>
+## Usage
 
 <a name="URL"></a>
 Link to deployed website is found here:
@@ -52,20 +51,17 @@ index.html, script.js and style.css files can be opened in Visual Studio Code
  
 
 ## Credits
-Othneildrew - for the example on linking back to the top of the readme page!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
-
 Please refer to the LICENSE in the repo.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Test instructions
+## Tests
 
 ### Application specific:
-
-
 
 #### Responsive Design
 * Validate that the webpage has a responsive design and scales for different screensizes
@@ -89,3 +85,9 @@ Please refer to the LICENSE in the repo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Questions?
+
+If you have questions, please contact me:
+
+- Email: test@gmail.com
+- GitHUb Username: test123
