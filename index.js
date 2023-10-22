@@ -1,26 +1,37 @@
+//Global Variables
+
+var githubtest = ""; 
+
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
 //fs
 //inquirer
 
+//---------------------------//
+// Constant - generateReadme //
+//---------------------------//
 
-const generateReadme = ({ name, location, github, linkedin }) =>
-`   <h1>Hi! My name is ${name}</h1>
-I am from ${location}.
+//Only pass through values that will be used verbatim in responses to questions)
+//All other variables need to be global variables
 
+const generateReadme = ({title, description, github, linkedin }) =>
+`
 My GitHub username is ${github}
+
+${githubtest}
+
 LinkedIn: ${linkedin}
 
 <a name="readme-top"></a>
 
-# Example Project Readme File 
+# ${title} 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+${description}
 
 - What was your motivation?
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
@@ -106,23 +117,23 @@ If you have questions, please contact me:
 - Email: test@gmail.com
 - GitHUb Username: test123
 
- 
- 
- 
+  
  
         `;
+
+      
 
 inquirer
   .prompt([
     {
       type: 'input',
-      name: 'name',
-      message: 'What is your name?',
+      name: 'title',
+      message: 'What is the title of your project?',
     },
     {
       type: 'input',
-      name: 'location',
-      message: 'Where are you from?',
+      name: 'description',
+      message: 'Provide a short description of your project covering what the application is, what it does, what problem(s) it solves and any relevant background information? Where are you from?',
     },
     {
       type: 'input',
@@ -144,9 +155,40 @@ inquirer
       name: 'linkedin',
       message: 'Enter your LinkedIn URL.',
     },
+
+
+    {
+      type: 'list',
+      name: 'databasetype',
+      message: 'Choose database :',
+      choices: ['mongoDB', 'mysql [alpha]', 'firebase [alpha]', 'url [alpha]'],
+      default: 'mongoDB'
+    },
+    {
+     type: 'input',
+     name: 'url',
+     message: 'Enter the URL',
+     when: (answers) =>answers.databasetype=== 'mongoDB'
+    },
+  
+
   ])
   .then((answers) => {
-    const readmeContent = generateReadme(answers);
+    
+
+    //Assess response to github - set the value of githubtest based on whether github is blank (declare githubtest as a global variable so that it can be used in the readme template in generateReadme())
+    if (answers.github) {
+      githubtest = `My GitHub username is ${answers.github} and this was dynamically inserted`
+      console.log (githubtest)
+  } else {
+    console.log ("github is blank")
+    githubtest = `github is null/undefined ... do something to remove  this section`
+    console.log (githubtest)
+  };
+  
+  const readmeContent = generateReadme(answers);
+
+// probably need an if statement in here about the questions section - if missing then leave blank or something
 
     fs.writeFile('README OUTPUT.MD', readmeContent, (err) =>
       err ? console.log(err) : console.log('Successfully created README OUTPUT.md')

@@ -1,18 +1,19 @@
-   <h1>Hi! My name is a</h1>
-I am from b.
 
-My GitHub username is r
+My GitHub username is e
+
+My GitHub username is e and this was dynamically inserted
+
 LinkedIn: f
 
 <a name="readme-top"></a>
 
-# Example Project Readme File 
+# a 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+b
 
 - What was your motivation?
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
@@ -98,8 +99,6 @@ If you have questions, please contact me:
 - Email: test@gmail.com
 - GitHUb Username: test123
 
- 
- 
- 
+  
  
         
