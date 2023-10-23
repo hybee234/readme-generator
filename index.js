@@ -5,6 +5,7 @@
 var githubtest = ""; 
 var licenseName = "";
 var licenseURL = "";
+var badge = "";
 
 //---------------------//
 //- Required packages -// 
@@ -12,6 +13,8 @@ var licenseURL = "";
 const fs = require('fs');
 const inquirer = require('inquirer');
 const licenseBadge = require ('./utils/generateMarkdown.js')
+
+
 
 //------------------------------------//
 //- Constant used to generate ReadMe -//
@@ -29,8 +32,10 @@ const generateReadme = ({title, description, installation, usage, license, contr
 
   ${licenseName}
   ${licenseURL}
+License badge test:
+  
 
-  ${licenseBadge.generateMarkdown}
+
 
 <a name="readme-top"></a>
 
@@ -183,6 +188,9 @@ inquirer
     console.log (githubtest)
   };
 
+  // Send value of "answers.license" to generateMarkdown.js
+  badge = licenseBadge.generateMarkdown(answers.license)
+  console.log (badge)
 
 //-----------------------------------//
 //- Function - Generate README file -//
