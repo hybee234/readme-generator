@@ -6,8 +6,10 @@
 
   
   
+License badge test:
+  
 
-  undefined
+
 
 <a name="readme-top"></a>
 
@@ -51,13 +53,13 @@ What is the application and what does it do?
 
 Please refer to the LICENSE in the repo.
 
-Boost Software License 1.0
+Apache License 2.0
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
 
-6
+5
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
