@@ -1,27 +1,36 @@
-//Global Variables
+//--------------------//
+//- Global Variables -//
+//--------------------//
 
 var githubtest = ""; 
+var licenseName = "";
+var licenseURL = "";
 
-// TODO: Include packages needed for this application
+//---------------------//
+//- Required packages -// 
+//---------------------//
 const fs = require('fs');
 const inquirer = require('inquirer');
-//fs
-//inquirer
+const licenseBadge = require ('./utils/generateMarkdown.js')
 
-//---------------------------//
-// Constant - generateReadme //
-//---------------------------//
+//------------------------------------//
+//- Constant used to generate ReadMe -//
+//------------------------------------//
 
 //Only pass through values that will be used verbatim in responses to questions)
 //All other variables need to be global variables
 
-const generateReadme = ({title, description, github, linkedin }) =>
+const generateReadme = ({title, description, installation, usage, license, contributing, testing, github, email }) =>
 `
-My GitHub username is ${github}
 
-${githubtest}
+# Messing around
+  My GitHub username is ${github}
+  ${githubtest}
 
-LinkedIn: ${linkedin}
+  ${licenseName}
+  ${licenseURL}
+
+  ${licenseBadge.generateMarkdown}
 
 <a name="readme-top"></a>
 
@@ -40,18 +49,10 @@ ${description}
 
 What is the application and what does it do?
 
-The Weather dashboard has some other notable features
-* Storage storage of search history to allow for quick searches
-* Clear history button to remove previous searches
-* The history section is hidden when there are no previous searches stored
-
-This webpage was developed without a boiler plate
-
 ## Table of contents
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
 - [Contributing](#contributing)
 - [Testing](#testing)
@@ -59,120 +60,116 @@ This webpage was developed without a boiler plate
 
 ## Installation
 
-Cloning the repo is the only step required.
+${installation}
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## Usage
 
-<a name="URL"></a>
-Link to deployed website is found here:
-* https://hybee234.github.io/weather-dashboard/
-
-index.html, script.js and style.css files can be opened in Visual Studio Code
+${usage}
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
     
-
-## Credits
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## License
+
 Please refer to the LICENSE in the repo.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Tests
-
-### Application specific:
-
-#### Responsive Design
-* Validate that the webpage has a responsive design and scales for different screensizes
-
-* Validate that the correct date displays when the page loads
-* Validate that you are presented with 9 slots where tasks can be captured (9am - 5pm) - each slot representing an hour of the working dya
-* Validate that, compared to the current time, slots in the past are grey, the current hour is red and future hours are green
-* Validate that you are able to type into the main field in each hourly slot (i.e. enter a task)
-* Validate that when you save the task for the hour, that the task remains when you refresh the page
-
-### Developer practice tests:
-* Validate that the application deployed at the live URL (<a href="#URL">Navigate to URL</a>)
-* Validate that the webpage loaded without errors
-* Validate that GitHub URL has been submitted
-* Validate that GitHub repository contains application code
-* Validate that the application resembles mock-up provided in the challenge instructions
-* Validate that the GitHub repository has a unique name
-* Validate that the GitHub repostiory followed be practice for class/id naming conventions, indentation, quality comments, etc
-* Validate that the repository contains multiple descriptive commit messages
-* Validate that the repository contains a quality README file with description, screenshot and link to deployed applications
+${license}
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Questions?
+## Contributing
 
-If you have questions, please contact me:
+${contributing}
 
-- Email: test@gmail.com
-- GitHUb Username: test123
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-  
+## Testing
+
+${testing}
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Questions
+
+Please contact me via below methods with your questions
+
+- GitHUb Username: ${github}
+- Email: ${email}
  
-        `;
+`;
 
-      
+
+//---------------------------//
+//- Prompts to the end user =//
+//---------------------------//
 
 inquirer
   .prompt([
     {
       type: 'input',
       name: 'title',
-      message: 'What is the title of your project?',
+      message: 'Title - What is the title of your project?',
     },
     {
       type: 'input',
       name: 'description',
-      message: 'Provide a short description of your project covering what the application is, what it does, what problem(s) it solves and any relevant background information? Where are you from?',
+      message: 'Description - provide a short description of your application (What is it? What does it do? What problem(s) does it solve? Any relevant background information to include?)',
     },
     {
       type: 'input',
-      name: 'hobby',
-      message: 'What is your favorite hobby?',
+      name: 'installation',
+      message: 'Installation intructions - How does one get to the starting screen? (Consider any platforms or pre-requisites required, what set up/installation is required)',
     },
     {
       type: 'input',
-      name: 'food',
-      message: 'What is your favorite food?',
+      name: 'usage',
+      message: 'Usage Information - How does an end-user use your application?',
+    },
+    {
+      type: 'list',
+      name: 'license',
+      message: 'License - which license applies to your repository?',
+      choices: [
+        {name: "Apache License 2.0", value: "Apache License 2.0"},
+        {name: "MIT License", value: "MIT License"},
+        {name: "BSD 2-Clause 'Simplified' License", value: "BSD 2-Clause 'Simplified' License"},
+        {name: "BSD 3 - Clause 'New' or 'Revised' License", value: "BSD 3 - Clause 'New' or 'Revised' License"},
+        {name: "Boost Software License 1.0", value: "Boost Software License 1.0"},
+        {name: "Creative Commons Zero v1.0 Universal", value: "Creative Commons Zero v1.0 Universal"},
+        {name: "Eclipse Public License 2.0", value: "Eclipse Public License 2.0"},
+        {name: "GNU General Public License v3.0", value: "GNU General Public License v3.0"},
+        {name: "GNU Affero General Public License v3.0", value: "GNU Affero General Public License v3.0"},
+        {name: "GNU General Public License v2.0", value: "GNU General Public License v2.0"},
+        {name: "GNU Lesser General Public License v2.1", value: "GNU Lesser General Public License v2.1"},
+        {name: "Mozilla Public License 2.0", value: "Mozilla Public License 2.0"},
+        {name: "The Unlicence", value: "The Unlicence"},
+        {name: "None", value: "None"},
+      ]
+    },
+    {
+      type: 'input',
+      name: 'contributing',
+      message: 'Contribution Guidelines - What guidelines  should be developer community to be aware of? (consider error reporting, feature development, management of repository (forking vs cloning), pull requests, issue logging)',
+    },
+    {
+      type: 'input',
+      name: 'testing',
+      message: 'Test Instrcutions - detail tests required to validate that the application is running as expcted. (Use the structure: "validate that [when these steps occur], that [expected result happens]")'
     },
     {
       type: 'input',
       name: 'github',
-      message: 'Enter your GitHub Username',
+      message: 'What is your GitHub Username?',
     },
     {
       type: 'input',
-      name: 'linkedin',
-      message: 'Enter your LinkedIn URL.',
+      name: 'email',
+      message: 'What is the best email to be contacted about your project?',
     },
-
-
-    {
-      type: 'list',
-      name: 'databasetype',
-      message: 'Choose database :',
-      choices: ['mongoDB', 'mysql [alpha]', 'firebase [alpha]', 'url [alpha]'],
-      default: 'mongoDB'
-    },
-    {
-     type: 'input',
-     name: 'url',
-     message: 'Enter the URL',
-     when: (answers) =>answers.databasetype=== 'mongoDB'
-    },
-  
 
   ])
+  
   .then((answers) => {
     
 
@@ -185,11 +182,13 @@ inquirer
     githubtest = `github is null/undefined ... do something to remove  this section`
     console.log (githubtest)
   };
-  
+
+
+//-----------------------------------//
+//- Function - Generate README file -//
+//-----------------------------------//
+
   const readmeContent = generateReadme(answers);
-
-// probably need an if statement in here about the questions section - if missing then leave blank or something
-
     fs.writeFile('README OUTPUT.MD', readmeContent, (err) =>
       err ? console.log(err) : console.log('Successfully created README OUTPUT.md')
     );
