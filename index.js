@@ -33,7 +33,7 @@ License badge test:
 
 <a name="readme-top"></a>
 
-# ${title} 
+# <p style="text-align: center;">${title}</p>
 
 ${badge}
 
