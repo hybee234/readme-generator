@@ -9,9 +9,9 @@ License badge test:
 
 <a name="readme-top"></a>
 
-# 1 
+# <p style="text-align: center;">1</p>
 
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
 ## Description
 
@@ -41,16 +41,16 @@ What is the application and what does it do?
 
 ## Usage
 
-
+4
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
     
 ## License
 
 
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
-This repository can be used in conjunction with licensing covered in  <b>Creative Commons Zero v1.0 Universal</b>
+This repository can be used in conjunction with licensing covered in  <b>GNU General Public License v2.0</b>
 
 (For license details, please click on the badge)
 
@@ -75,6 +75,6 @@ This repository can be used in conjunction with licensing covered in  <b>Creativ
 
 Please contact me via below methods with your questions
 
-- GitHUb Username: 7
+- GitHub Username: 7
 - Email: 8
  
