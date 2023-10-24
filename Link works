@@ -1,0 +1,83 @@
+[33mcommit 36c4a5f2e931079016b15afb12f63fe5670c5ece[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m, [m[1;31morigin/dev[m[33m)[m
+Author: Hybee <hybee234@outlook.com>
+Date:   Mon Oct 23 21:37:21 2023 +1100
+
+    connecting index.js with generateMarkdown.js
+
+[33mcommit 2bb64b06076a443afce303ced90ee4274decb30e[m
+Author: Hybee <hybee234@outlook.com>
+Date:   Mon Oct 23 17:45:43 2023 +1100
+
+    structuring generated readme file
+
+[33mcommit f7d32f609bbdd9ff7cbc8050560bb753d461e31e[m
+Author: Hybee <hybee234@outlook.com>
+Date:   Mon Oct 23 01:34:40 2023 +1100
+
+    Testing inquirer prompting functionality
+
+[33mcommit ecf01ebc4ec6c51c00d5aeb94ad7aea35d0b721c[m
+Author: Hybee <hybee234@outlook.com>
+Date:   Sun Oct 22 19:03:02 2023 +1100
+
+    test readme online
+
+[33mcommit b7420bc8b411bd43917ad55575f90ecd01c45108[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Hy Lim <hybee234@outlook.com>
+Date:   Sun Oct 22 16:34:46 2023 +1100
+
+    esting file creation
+
+[33mcommit ae366f740e94aaa2002da26e5388c0793f103d73[m
+Merge: 767d56e 4834519
+Author: hybee234 <121220686+hybee234@users.noreply.github.com>
+Date:   Sun Oct 22 14:37:04 2023 +1100
+
+    Merge pull request #2 from hybee234/dev
+    
+    test readme
+
+[33mcommit 48345190fdd70c314a8331babcec0b1843aaffd2[m
+Author: Hybee <hybee234@outlook.com>
+Date:   Sun Oct 22 14:36:27 2023 +1100
+
+    test readme
+
+[33mcommit 767d56e0e2c24d9c2a215cc19a43efd0253d4342[m
+Merge: 235ce39 c4ee518
+Author: hybee234 <121220686+hybee234@users.noreply.github.com>
+Date:   Sun Oct 22 00:09:16 2023 +1100
+
+    Merge pull request #1 from hybee234/dev
+    
+    readme testing
+
+[33mcommit c4ee518728a77d85538a8d9e6529fca5508f08cb[m
+Author: Hybee <hybee234@outlook.com>
+Date:   Sun Oct 22 00:08:49 2023 +1100
+
+    readme testing
+
+[33mcommit 235ce39cf90242177024b755b238ef425b37035d[m[33m ([m[1;32mmain[m[33m)[m
+Author: Hybee <hybee234@outlook.com>
+Date:   Sat Oct 21 23:52:59 2023 +1100
+
+    drafting readme template
+
+[33mcommit e7a5ae2ff30a5346b70d51ff687bca92c294f7a6[m
+Author: Hybee <hybee234@outlook.com>
+Date:   Thu Oct 19 21:13:13 2023 +1100
+
+    Additional set up steps for NPM
+
+[33mcommit 580d44b84319957b06a96c8b9a4a6edd5fc29f2a[m
+Author: Hybee <hybee234@outlook.com>
+Date:   Thu Oct 19 21:05:48 2023 +1100
+
+    Repo created from boiler plate
+
+[33mcommit b114ddeef7ed35d16721c280ea158ead6719654d[m
+Author: hybee234 <121220686+hybee234@users.noreply.github.com>
+Date:   Thu Oct 19 20:57:38 2023 +1100
+
+    Initial commit

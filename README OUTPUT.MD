@@ -1,21 +1,17 @@
 
 
 # Messing around
-  My GitHub username is 7
+
+My GitHub username is 7
   My GitHub username is 7 and this was dynamically inserted
 
-  
-  
 License badge test:
-  
-
-
 
 <a name="readme-top"></a>
 
 # 1 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Description
 
@@ -45,15 +41,21 @@ What is the application and what does it do?
 
 ## Usage
 
-4
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
     
 ## License
 
-Please refer to the LICENSE in the repo.
 
-Apache License 2.0
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+
+This repository can be used in conjunction with licensing covered in  <b>Creative Commons Zero v1.0 Universal</b>
+
+(For license details, please click on the badge)
+
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
