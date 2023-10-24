@@ -1,18 +1,16 @@
 //--------------------//
 //- Global Variables -//
 //--------------------//
-
 var githubtest = ""; 
-var licenseName = "";
-var licenseURL = "";
 var badge = "";
+var licenseBody = ""
 
 //---------------------//
 //- Required packages -// 
 //---------------------//
 const fs = require('fs');
 const inquirer = require('inquirer');
-const licenseBadge = require ('./utils/generateMarkdown.js')
+const licenseBadge = require('./utils/licenseSection.js');
 
 
 
@@ -27,21 +25,17 @@ const generateReadme = ({title, description, installation, usage, license, contr
 `
 
 # Messing around
-  My GitHub username is ${github}
+
+My GitHub username is ${github}
   ${githubtest}
 
-  ${licenseName}
-  ${licenseURL}
 License badge test:
-  
-
-
 
 <a name="readme-top"></a>
 
 # ${title} 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+${badge}
 
 ## Description
 
@@ -77,9 +71,8 @@ ${usage}
     
 ## License
 
-Please refer to the LICENSE in the repo.
+${licenseBody}
 
-${license}
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -99,7 +92,7 @@ ${testing}
 
 Please contact me via below methods with your questions
 
-- GitHUb Username: ${github}
+- GitHub Username: ${github}
 - Email: ${email}
  
 `;
@@ -174,11 +167,15 @@ inquirer
     },
 
   ])
+ 
+  //-----------------------//
+  //- Process all answers -//
+  //-----------------------//
   
   .then((answers) => {
     
 
-    //Assess response to github - set the value of githubtest based on whether github is blank (declare githubtest as a global variable so that it can be used in the readme template in generateReadme())
+    //Assess response to github username - set the value of githubtest based on whether github is blank (declare githubtest as a global variable so that it can be used in the readme template in generateReadme())
     if (answers.github) {
       githubtest = `My GitHub username is ${answers.github} and this was dynamically inserted`
       console.log (githubtest)
@@ -188,9 +185,12 @@ inquirer
     console.log (githubtest)
   };
 
-  // Send value of "answers.license" to generateMarkdown.js
-  badge = licenseBadge.generateMarkdown(answers.license)
-  console.log (badge)
+  // Call badge function in licenseSection.js to provide badge URL (store as "badge" global variable)
+  badge = licenseBadge.badge(answers.license)
+ 
+  // Call licenseBody function in licenseSection.js to provide text for license body (store as "licenseBody" global variable)
+  // Passes through license resposne and the badge details determined above
+  licenseBody = licenseBadge.licenseBody(answers.license, badge)
 
 //-----------------------------------//
 //- Function - Generate README file -//
