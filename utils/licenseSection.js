@@ -62,7 +62,7 @@ function licenseBody(license, badge) {
     
 
     if (license === "None") {
-        licenseBodyText = `This project does not have a defined license`  
+        licenseBodyText = `This application does not have a defined use license`  
         return licenseBodyText;
     } else {        
         licenseBodyText =

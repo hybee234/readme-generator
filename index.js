@@ -110,7 +110,7 @@ inquirer
         {
             type: 'input',
             name: 'installation',
-            message: 'Installation intructions - provides steps on how to get to the starting screen of your application. (Consider pre-requisites and set up required)',
+            message: 'Installation intructions - how is your application set up for use? (Consider pre-requisites and set up required)',
         },
         {
             type: 'input',

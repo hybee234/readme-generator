@@ -22,14 +22,15 @@ This application was created utilising a boiler plate and
 - <a href="#user-story">User Story<a>
 - <a href="#user-acceptance-criteria">User Acceptance Criteria<a>
 - [Installation](#installation)
-- [Installation](#installation)
 - [Usage](#usage)
+- [Screenshots](#screenshots)
 - [License](#license)
 - [Contributing](#contributing)
 - [Testing](#testing)
+- <a href="#technologies-used">Technologies Used<a>
 - [Questions](#questions)
 
-## User Story <a name="user-story"></a>
+## User Story <a ID="user-story"></a>
 
 This application was developed with this user story in mind:
 
@@ -42,7 +43,7 @@ SO THAT I can quickly create a professional README for a new project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## User Acceptance Criteria
+## User Acceptance Criteria <a ID="user-acceptance-criteria"></a>
 
 This application was developed with the below User acceptance criteria:
 
@@ -73,18 +74,26 @@ THEN I am taken to the corresponding section of the README
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Screenshots
+
+The below is a screenshot of the web application's appearance
+
+![Alt text](./assets/images/screenshot.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## Installation
 
-* This application requires you to Clone or Fork the repository so that you have a version available locally
-* This application requires version 8 of <a href="https://www.npmjs.com/package/inquirer">Inquirer </a>
+This applications has a couple of dependencies:
+* Clone or Fork the repository so that you have a version available locally
+* Version 8 of <a href="https://www.npmjs.com/package/inquirer">Inquirer </a>
 
 
-
-Run the below command in the CLI to install dependancies (make sure you are in the root folder of the application when you do this)
+After creating a local copy of the application, run the below command in the CLI to install dependancies (make sure you are in the root folder of the application when you do this)
 
 ~~~
-npm install inquirer
+npm install 
 ~~~
             
 
@@ -97,14 +106,8 @@ To execute the application, open then CLI, navigate to the root folder of this a
 node index.js
 ~~~
 
-The application will present a series of questions to respond to. The readme generator will collate response and produce a `README OUTPUT.md` file within the `output` folder
+The readme generator will present a series of questions for you to respond to and, based on your answers, will produce a `README OUTPUT.md` file within the `output` folder
 
-The 
-run node index.js, answer the series of questions. THe application will produce a readme file within the /output folder
-
-
-
-Run this command the execute the application
         
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -132,9 +135,32 @@ A test script file has not been created, however manual testing can be carried o
 
 ### Applications Testing
 
-* Validate that when ... ...
+* Validate that when you run ``` node index.js ``` in CLI that you are presented with a series of questions to answer
+* Validate that when the questions have all been answered, that a `README OUTPUT.md` file is generated in the `output` subfolder
+* Validate that the links in the Table of contents successfully moves you to the corresponding section of the readme
+* Validate that the `back to top` links successfully moves you to the start of the readme file.
+
+* Validate that if the user response to the Installation Command is blank, then the code block within the Installation section does not popualte
+* Validate that if the user response to the Usage Command is blank, then the code block within the Usage section does not populate 
+
+* Validate that the License badge populates and that it matches the license selected by the user. 
+* Validate that clicking on the License badge opens a new browser that brings you to the  corresponding license page.
+* Validate that the text in the License section is populating with the selected license.
+* Validate that if the user selects "none" for license, then the license text will indication "This applciation does not have a defined use license"
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Technologies used <a ID="technologies-used"></a>
+
+* Javascript
+* Node.js
+* Node Package Manager (NPM)
+* Inquirer
+* File System Package
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## Questions
 

@@ -1,13 +1,13 @@
 
 <a name="readme-top"></a>
 
-# <p style="text-align: center;">Super Dooper</p>
+# <p style="text-align: center;">a</p>
 
-[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+
 
 ## Description
 
-This application is a readme file generator that is run with command line interface. The application asks a series of questions and will produce a professional quality readme file
+b
 
 ## Table of contents
 
@@ -20,13 +20,13 @@ This application is a readme file generator that is run with command line interf
 
 ## Installation
 
-Clone or fork the repository and away you go
+d
 
 
 
 Run this command to install the application:
 ~~~
-npm install inquirer
+e
 ~~~
             
 
@@ -34,13 +34,13 @@ npm install inquirer
 
 ## Usage
 
-run node index.js, answer the series of questions. THe application will produce a readme file within the /output folder
+f
 
 
 
 Run this command the execute the application
 ~~~
-node index.js
+g
 ~~~
         
 
@@ -48,33 +48,26 @@ node index.js
     
 ## License
 
-
-[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
-
-This application can be used in conjunction with licensing covered in  <b>BSD 2-Clause 'Simplified' License</b>
-
-(Click on the badge for details of the license)
-
-
+This project does not have a defined license
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
 
-Grab a branch and start coding
+f
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Testing
 
-No test scripts have been supplied
+e
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Questions
 
-- Contact me via email huber.lim@outlook.com
+- Contact me via email e
 
-- Visit my GitHub page: <a href="https://github.com/hybee234"> hybee234 </a>
+- Visit my GitHub page: <a href="https://github.com/f"> f </a>
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
