@@ -1,13 +1,13 @@
 
 <a name="readme-top"></a>
 
-# <p style="text-align: center;">Awesome Project</p>
+# <p style="text-align: center;">Super Dooper</p>
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 
 ## Description
 
-It solves world poverty
+This application is a readme file generator that is run with command line interface. The application asks a series of questions and will produce a professional quality readme file
 
 ## Table of contents
 
@@ -20,13 +20,13 @@ It solves world poverty
 
 ## Installation
 
-run this via CLI, open a terminal within the same folder
+Clone or fork the repository and away you go
 
 
 
 Run this command to install the application:
 ~~~
-npm install jest --dev
+npm install inquirer
 ~~~
             
 
@@ -34,7 +34,7 @@ npm install jest --dev
 
 ## Usage
 
-Use it to steal from the rich and give to the poor
+run node index.js, answer the series of questions. THe application will produce a readme file within the /output folder
 
 
 
@@ -49,9 +49,9 @@ node index.js
 ## License
 
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 
-This application can be used in conjunction with licensing covered in  <b>GNU General Public License v3.0</b>
+This application can be used in conjunction with licensing covered in  <b>BSD 2-Clause 'Simplified' License</b>
 
 (Click on the badge for details of the license)
 
@@ -61,20 +61,20 @@ This application can be used in conjunction with licensing covered in  <b>GNU Ge
 
 ## Contributing
 
-Go for it
+Grab a branch and start coding
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Testing
 
-Test for it
+No test scripts have been supplied
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Questions
 
-- Contact me via email hybee234@outlook.com
+- Contact me via email huber.lim@outlook.com
 
-- Visit my GitHub page: <a href="https://github.com/hybee234"> hybee234 </a> (click to visit my profile!)
+- Visit my GitHub page: <a href="https://github.com/hybee234"> hybee234 </a>
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
