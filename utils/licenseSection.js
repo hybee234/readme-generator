@@ -69,9 +69,9 @@ function licenseBody(license, badge) {
 `
 ${badge}
 
-This repository can be used in conjunction with licensing covered in  <b>${license}</b>
+This application can be used in conjunction with licensing covered in  <b>${license}</b>
 
-(For license details, please click on the badge)
+(Click on the badge for details of the license)
 
 `         
         return licenseBodyText;
