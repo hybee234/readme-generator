@@ -53,7 +53,7 @@ function badge(license) {
 }
 
 //------------------------------//
-//- Function - License section -//
+//- Function - License body text -//
 //------------------------------//
 
 function licenseBody(license, badge) {    
