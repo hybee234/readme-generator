@@ -1,13 +1,13 @@
 
 <a name="readme-top"></a>
 
-# <p style="text-align: center;">a</p>
+# <p style="text-align: center;">Cyberpunk</p>
 
-
+[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
 
 ## Description
 
-b
+Rebecca is cool
 
 ## Table of contents
 
@@ -20,13 +20,12 @@ b
 
 ## Installation
 
-d
-
+None needed
 
 
 Run this command to install the application:
 ~~~
-e
+npm i
 ~~~
             
 
@@ -34,13 +33,12 @@ e
 
 ## Usage
 
-f
+type in your name
 
 
-
-Run this command the execute the application
+Run this command the execute the application:
 ~~~
-g
+node index.js
 ~~~
         
 
@@ -48,26 +46,33 @@ g
     
 ## License
 
-This project does not have a defined license
+
+[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+
+This application can be used in conjunction with licensing covered in  <b>Boost Software License 1.0</b>
+
+(Click on the badge for details of the license)
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
 
-f
+Get in touch with me
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Testing
 
-e
+index.test.js
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Questions
 
-- Contact me via email e
+- Contact me via email that@gmail.com
 
-- Visit my GitHub page: <a href="https://github.com/f"> f </a>
+- Visit my GitHub page: <a href="https://github.com/hybee234"> hybee234 </a>
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

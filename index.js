@@ -1,12 +1,3 @@
-//--------------------//
-//- Global Variables -//
-//--------------------//
-var githubURL = ""; 
-var badge = "";
-var licenseBody = "";
-var installCommand = "";
-var usageCommand = "";
-
 //---------------------//
 //- Required packages -// 
 //---------------------//
@@ -14,14 +5,17 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const licenseBadge = require('./utils/licenseSection.js');
 
-
+//--------------------//
+//- Global Variables -//
+//--------------------//
+var badge = "";
+var licenseBody = "";
+var installCommand = "";
+var usageCommand = "";
 
 //------------------------------------//
 //- Constant used to generate ReadMe -//
 //------------------------------------//
-
-//Only pass through values that will be used verbatim in responses to questions)
-//All other variables need to be global variables
 
 const generateReadme = ({title, description, installation, usage, contributing, testing, github, email }) =>
 
@@ -49,7 +43,6 @@ ${description}
 
 ${installation}
 
-
 ${installCommand}
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -57,7 +50,6 @@ ${installCommand}
 ## Usage
 
 ${usage}
-
 
 ${usageCommand}
 
@@ -90,7 +82,6 @@ ${testing}
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 `;
 
-
 //---------------------------//
 //- Prompts to the end user =//
 //---------------------------//
@@ -100,37 +91,37 @@ inquirer
         {
             type: 'input',
             name: 'title',
-            message: 'Title - What is the title of your project?',
+            message: 'Title: What is your application called?',
         },
         {
             type: 'input',
             name: 'description',
-            message: 'Description - provide a short description of your application (What is it? What does it do? What problem(s) does it solve?)',
+            message: 'Description: Provide a short description of your application (What is it? What problem(s) does it solve? How does it do this?)',
         },
         {
             type: 'input',
             name: 'installation',
-            message: 'Installation intructions - how is your application set up for use? (Consider pre-requisites and set up required)',
+            message: 'Installation intructions: How is your application set up for use? (Consider pre-requisites and set up required)',
         },
         {
             type: 'input',
             name: 'installation_command',
-            message: 'Installation intructions - What command is required to install dependancies? (leave blank if none)',
+            message: 'Installation intructions: What command is run to install dependancies? (Leave blank if none)',
         },
         {
             type: 'input',
             name: 'usage',
-            message: 'Usage Information - Provide a quick summary of how an end-user can use your application.',
+            message: 'Usage Information - How is your application used?',
         },
         {
             type: 'input',
             name: 'usage_command',
-            message: 'Usage Information - What command is used to run the application? (leave blank if none)',
+            message: 'Usage Information - What command is run to execute the application? (leave blank if none)',
         },
         {
             type: 'list',
             name: 'license',
-            message: 'License - which license applies to your repository?',
+            message: 'License - which license applies to your application?',
             choices: [
                 {name: "Apache License 2.0", value: "Apache License 2.0"},
                 {name: "MIT License", value: "MIT License"},
@@ -151,23 +142,24 @@ inquirer
         {
             type: 'input',
             name: 'contributing',
-            message: 'Contribution Guidelines - What guidelines should be developer community to be aware of? (consider error reporting, feature development, management of repository (forking vs cloning), pull requests, issue logging)',
+            message: 'Contribution Guidelines - What guidelines do you have? (Consider error reporting, feature development, management of repository (forking vs cloning), pull requests, issue logging)',
         },
         {
             type: 'input',
             name: 'testing',
-            message: 'Test Instructions - provide instructions on any tests or test files available (Provide execution steps, any required packages and execution steps.)' ,
+            message: 'Test Instructions - provide instructions on any tests or test files available (Provide execution steps, any required packages)' ,
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email?',
         },
         {
             type: 'input',
             name: 'github',
             message: 'What is your GitHub Username?',
         },
-        {
-            type: 'input',
-            name: 'email',
-            message: 'What is the best email to be contacted about your project?',
-        },
+
     ])
  
     //-----------------------//
@@ -194,7 +186,7 @@ ${answers.installation_command}
         usageCommand = ""
     } else {
         usageCommand = `
-Run this command the execute the application
+Run this command the execute the application:
 ~~~
 ${answers.usage_command}
 ~~~
@@ -208,25 +200,16 @@ ${answers.usage_command}
         // Passes through license response and the badge details determined above
     licenseBody = licenseBadge.licenseBody(answers.license, badge)
 
-    // Contributing
-
-    // Testing
-
-    // Questions
-        // GitHub    
-        // Email
-
-
 //-----------------------------------//
 //- Function - Generate README file -//
 //-----------------------------------//
 
-    const readmeContent = generateReadme(answers);
-        // Ensure there is an 'output' folder to store the readme file in.
-        fs.mkdir('./output', { recursive: true }, (err) => { err ? console.log(err) : 1
-        });
-        // Create the Readme File
-        fs.writeFile('./output/README OUTPUT.MD', readmeContent, (err) =>
-        err ? console.log(err) : console.log('Successfully created README OUTPUT.md - stored in output folder')
-        );
+const readmeContent = generateReadme(answers);
+    // Ensure there is an 'output' folder to store the readme file in.
+    fs.mkdir('./output', { recursive: true }, (err) => { err ? console.log(err) : 1
     });
+    // Create the Readme File
+    fs.writeFile('./output/README OUTPUT.MD', readmeContent, (err) =>
+    err ? console.log(err) : console.log('Successfully created README OUTPUT.md - stored in output folder')
+    );
+});
