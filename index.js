@@ -26,13 +26,6 @@ const licenseBadge = require('./utils/licenseSection.js');
 const generateReadme = ({title, description, installation, usage, contributing, testing, github, email }) =>
 
 `
-# Messing around
-
-My GitHub username is ${github}
-
-
-License badge test:
-
 <a name="readme-top"></a>
 
 # <p style="text-align: center;">${title}</p>
@@ -42,9 +35,6 @@ ${badge}
 ## Description
 
 ${description}
-
-What is the application and what does it do?
-- What problem(s) does it solve?
 
 ## Table of contents
 
@@ -93,10 +83,10 @@ ${testing}
 
 ## Questions
 
-- GitHub Username: <a href="https://github.com/${github}"> ${github} </a> (click to visit my profile!)
-  
-- Email: ${email}
+- Contact me via email ${email}
 
+- Visit my GitHub page: <a href="https://github.com/${github}"> ${github} </a>
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 `;
 
@@ -130,7 +120,7 @@ inquirer
         {
             type: 'input',
             name: 'usage',
-            message: 'Usage Information - Provide a quick summary of how an end-user can use your application',
+            message: 'Usage Information - Provide a quick summary of how an end-user can use your application.',
         },
         {
             type: 'input',

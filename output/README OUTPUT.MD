@@ -1,23 +1,13 @@
 
-# Messing around
-
-My GitHub username is hybee234
-
-
-License badge test:
-
 <a name="readme-top"></a>
 
-# <p style="text-align: center;">TItle</p>
+# <p style="text-align: center;">Awesome Project</p>
 
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Description
 
-Welcome to my project page
-
-What is the application and what does it do?
-- What problem(s) does it solve?
+It solves world poverty
 
 ## Table of contents
 
@@ -30,7 +20,7 @@ What is the application and what does it do?
 
 ## Installation
 
-Install via CLI npm module
+run this via CLI, open a terminal within the same folder
 
 
 
@@ -44,7 +34,7 @@ npm install jest --dev
 
 ## Usage
 
-Use it like you mean it
+Use it to steal from the rich and give to the poor
 
 
 
@@ -59,9 +49,9 @@ node index.js
 ## License
 
 
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-This application can be used in conjunction with licensing covered in  <b>Creative Commons Zero v1.0 Universal</b>
+This application can be used in conjunction with licensing covered in  <b>GNU General Public License v3.0</b>
 
 (Click on the badge for details of the license)
 
@@ -71,20 +61,20 @@ This application can be used in conjunction with licensing covered in  <b>Creati
 
 ## Contributing
 
-Do stuff
+Go for it
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Testing
 
-Nil available
+Test for it
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Questions
 
-- GitHub Username: <a href="https://github.com/hybee234"> hybee234 </a> (click to visit my profile!)
-  
-- Email: hybee@gmail.com
+- Contact me via email hybee234@outlook.com
 
+- Visit my GitHub page: <a href="https://github.com/hybee234"> hybee234 </a> (click to visit my profile!)
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
