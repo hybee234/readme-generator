@@ -20,7 +20,7 @@ var usageCommand = "";
 const generateReadme = ({title, description, installation, usage, contributing, testing, github, email }) =>
 
 `
-<a name="readme-top"></a>
+<a ID="readme-top"></a>
 
 # <p style="text-align: center;">${title}</p>
 
@@ -175,7 +175,7 @@ inquirer
             installCommand = ""
         } else {
             installCommand = `
-Run this command to install the application:
+Run this command to set up the application:
 ~~~
 ${answers.installation_command}
 ~~~
