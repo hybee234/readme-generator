@@ -1,13 +1,13 @@
 
-<a name="readme-top"></a>
+<a ID="readme-top"></a>
 
-# <p style="text-align: center;">Cyberpunk</p>
+# <p style="text-align: center;">Huber's Readme Generator</p>
 
-[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-Rebecca is cool
+This application helps to generate a professional readme file based on user reponses to a series of questions. This aims to reduce the time taken for developers to generate a readme file.
 
 ## Table of contents
 
@@ -20,10 +20,10 @@ Rebecca is cool
 
 ## Installation
 
-None needed
+Cloning the repository locally. Once complete, launch the terminal in VS Code and install dependencies
 
 
-Run this command to install the application:
+Run this command to set up the application:
 ~~~
 npm i
 ~~~
@@ -33,7 +33,7 @@ npm i
 
 ## Usage
 
-type in your name
+This application run within the command line interface (CLI). When executed, the user is presented with a series of questions to answer. Once all reponses are captured, a "Readme Output.md" file will be created and stored within the "output" subfolder.
 
 
 Run this command the execute the application:
@@ -47,9 +47,9 @@ node index.js
 ## License
 
 
-[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This application can be used in conjunction with licensing covered in  <b>Boost Software License 1.0</b>
+This application can be used in conjunction with licensing covered in  <b>MIT License</b>
 
 (Click on the badge for details of the license)
 
@@ -59,19 +59,19 @@ This application can be used in conjunction with licensing covered in  <b>Boost 
 
 ## Contributing
 
-Get in touch with me
+Please contact me to contribute to my application (contact details below)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Testing
 
-index.test.js
+Test scripts have not been created for this application
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Questions
 
-- Contact me via email that@gmail.com
+- Contact me via email abc123@gmail.com
 
 - Visit my GitHub page: <a href="https://github.com/hybee234"> hybee234 </a>
   
