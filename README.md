@@ -74,7 +74,7 @@ THEN I am taken to the corresponding section of the README
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Video and Screenshots <a ID = "#video-screenshots"></a>
+## Video and Screenshots <a ID = "video-screenshots"></a>
 
 Watch this video to learn more about the application
 
