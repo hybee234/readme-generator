@@ -106,7 +106,7 @@ inquirer
         {
             type: 'input',
             name: 'installation_command',
-            message: 'Installation intructions: What command is run to install dependancies? (Leave blank if none)',
+            message: 'Installation intructions: What command is run to install dependencies? (Leave blank if none)',
         },
         {
             type: 'input',
