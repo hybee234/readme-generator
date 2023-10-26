@@ -23,7 +23,7 @@ This application was created utilising a boiler plate and
 - <a href="#user-acceptance-criteria">User Acceptance Criteria<a>
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
+- <a href="#video-screenshots">Video and Screenshots<a>
 - [License](#license)
 - [Contributing](#contributing)
 - [Testing](#testing)
@@ -74,26 +74,21 @@ THEN I am taken to the corresponding section of the README
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Screenshots
-
-The below is a screenshot of the questions appear on the command line interface:
-
-![Alt text](./assets/images/screenshot1.png)
-
-The below is a snippet of a Readme file genearated by the application
-
-![Alt text](./assets/images/screenshot2.png)
+## Video and Screenshots <a ID = "#video-screenshots"></a>
 
 Watch this video to learn more about the application
 
-[![Watch the video](https://drive.google.com/file/d/1CQPkWc-zCFDpUQK3k08EP4xWxqfxaRvM/view)]
+<a href="https://drive.google.com/file/d/1CQPkWc-zCFDpUQK3k08EP4xWxqfxaRvM/view"> Video - "How to: Huber's Readme Generator" </a>
 
-Test iFrame
-<iframe src="https://drive.google.com/file/d/1CQPkWc-zCFDpUQK3k08EP4xWxqfxaRvM/preview" width="640" height="480"></iframe>
+Screenshot 1: Questions in the command line interface:
+
+![Alt text](./assets/images/screenshot1.png)
+
+Screenshot 2: Snippet of a Readme file genearated by the application
+
+![Alt text](./assets/images/screenshot2.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## Installation
 
