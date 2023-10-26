@@ -76,11 +76,23 @@ THEN I am taken to the corresponding section of the README
 
 ## Screenshots
 
-The below is a screenshot of the web application's appearance
+The below is a screenshot of the questions appear on the command line interface:
 
-![Alt text](./assets/images/screenshot.png)
+![Alt text](./assets/images/screenshot1.png)
+
+The below is a snippet of a Readme file genearated by the application
+
+![Alt text](./assets/images/screenshot2.png)
+
+Watch this video to learn more about the application
+
+[![Watch the video](https://drive.google.com/file/d/1CQPkWc-zCFDpUQK3k08EP4xWxqfxaRvM/view)]
+
+Test iFrame
+<iframe src="https://drive.google.com/file/d/1CQPkWc-zCFDpUQK3k08EP4xWxqfxaRvM/preview" width="640" height="480"></iframe>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 ## Installation
